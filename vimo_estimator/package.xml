@@ -40,6 +40,7 @@
   <!-- Use test_depend for packages you need only for testing: -->
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>blackbird</build_depend>
   <build_depend>mav_msgs</build_depend>
   <build_depend>quadrotor_msgs</build_depend>
   <build_depend>quadrotor_common</build_depend>
@@ -50,6 +51,8 @@
   <build_depend>roscpp</build_depend>
   <run_depend>roscpp</run_depend>
   <run_depend>rosbag</run_depend>
+  <run_depend>blackbird</run_depend>
+  
 
 
   <!-- The export tag contains other, unspecified, tags -->

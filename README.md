@@ -30,6 +30,9 @@ Clone the repository and catkin_make:
 ```
     cd ~/catkin_ws/src
     git clone https://github.com/uzh-rpg/vimo.git
+    git clone https://github.com/uzh-rpg/rpg_quadrotor_common
+    git clone https://github.com/catkin/catkin_simple
+    git clone https://github.com/ethz-asl/eigen_catkin
     cd ../
     catkin_make
     source ~/catkin_ws/devel/setup.bash
@@ -39,7 +42,7 @@ Clone the repository and catkin_make:
 
 ## 3. VIMO on Public datasets
 
-We can only run VIMO on datasets that contain motor speeds or control commands. One such dataset is [Blackbird Dataset](https://github.com/mit-fast/Blackbird-Dataset). We tested VIMO on Blackbird's **star** and **picasso** sequences. Settings to run VIMO on Blackbird dataset are in **blackbird** branch.
+We can only run VIMO on datasets that contain motor speeds or control commands. One such dataset is [Blackbird Dataset](https://github.com/mit-fast/Blackbird-Dataset). We tested VIMO on Blackbird's **star** and **picasso** sequences. Settings to run VIMO on Blackbird dataset are in **blackbird** branch. You will need the `blackbird/rotor_rpm` message, so follow the [instructions for using blackbird in ROS](https://github.com/mit-fast/Blackbird-Dataset#using-the-dataset-in-ros) to add the message definitions to your workspace before compiling (this fork however already includes a package with message definitions, so if you cloned this fork there is no need for this last step): 
 
 ```
     cd ~/catkin_ws/src/vimo
