@@ -6,11 +6,11 @@ process_at_control_input_rate: 1    # set to 1 if control commands for VIMO have
 
 # topic names
 imu_topic: "/blackbird/imu"
-image_topic: "/camera/image_raw"
+image_topic: "/uav/camera/Camera_Right_Gray/image_rect"
 control_topic: "/blackbird/rotor_rpm"
 
 # paths to store results of the state, computation times and external force estimates
-output_path: "/home/barza/barza-vins-out" # path for csv file
+output_path: "/home/fer/git_clone/vimo_ws/outputs/" # path for csv file
 
 #camera calibration 
 model_type: PINHOLE
@@ -83,7 +83,7 @@ scale_thrust_input: 1
 loop_closure: 0                    # start loop closure
 load_previous_pose_graph: 0        # load and reuse previous pose graph; load from 'pose_graph_save_path'
 fast_relocalization: 0             # useful in real-time and large project
-pose_graph_save_path: "/home/barza/barza-vins-out/pose_graph/" # save and load path
+pose_graph_save_path: "/home/fer/git_clone/vimo_ws/outputs/graph/" # save and load path
 
 #unsynchronization parameters
 estimate_td: 0                      # online estimate time offset between camera and imu

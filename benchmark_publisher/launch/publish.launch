@@ -1,6 +1,6 @@
 <launch>
     <node name="benchmark_publisher" pkg="benchmark_publisher" type="benchmark_publisher" output="screen">
-        <param name="data_name" type="string" value="$(find benchmark_publisher)/config/star_maxSpeed1p0_poses.csv" />
+        <param name="data_name" type="string" value="$(find benchmark_publisher)/config/picasso_maxSpeed4p0_poses.csv" />
         <remap from="~estimated_odometry" to="/vimo_estimator/odometry" />
     </node>
 </launch>
